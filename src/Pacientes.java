@@ -1,7 +1,7 @@
 
 
 import java.lang.*;
-public class Pacientes extends Comparable<E>{
+public class Pacientes implements Comparable<Pacientes>{
 	private String nombre;
 	private String sintoma;
 	private String nivel;
@@ -29,5 +29,10 @@ public class Pacientes extends Comparable<E>{
 
 	public String getNivel(){
 		return nivel;
+	}
+
+
+	public int compareTo(Pacientes o){
+		return nivel.compareTo(o.getNivel());
 	}
 }

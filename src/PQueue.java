@@ -1,7 +1,7 @@
 
 
 
-interface PriorityQueue<E>{
+interface PQueue<E>{
 
 
 	public boolean add(E item);
