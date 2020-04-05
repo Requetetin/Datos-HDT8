@@ -1,4 +1,16 @@
-
+/*
+ * JCFPQueue.java
+ * Martin Amado Giron
+ * 5-4-2020
+ * 
+ * Priority Queue implementado con Java Collections Framework
+ * 
+ * @author Martin Amado
+ * 19020
+ *
+ *
+ *
+ */
 
 
 
@@ -6,30 +18,14 @@ import java.lang.*;
 import java.util.*;
 public class JCFPQueue<E> implements PQueue<E>{
 
-	PriorityQueue<E> prq = new PriorityQueue<E>();
+	protected PriorityQueue<E> prq = new PriorityQueue<E>();
 
-	public boolean add(E item){
-		return prq.add(item);
+	public void add(E item){
+		prq.add(item);
 	}
 
-
-	public void clear(){
-		prq.clear();
-	}
-
-
-	public boolean contains(Object o){
-		return prq.contains(o);
-	}
-
-
-	public E peek(){
-		return prq.peek();
-	}
-
-
-	public boolean remove(Object o){
-		return prq.remove(o);
+	public E remove(){
+		return prq.remove();
 	}
 
 

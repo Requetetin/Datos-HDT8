@@ -1,4 +1,16 @@
-
+/*
+ * Factory.java
+ * Martin Amado Giron
+ * 5-4-2020
+ * 
+ * Return patron de diseno factory
+ * 
+ * @author Martin Amado
+ * 19020
+ *
+ *
+ *
+ */
 
 
 public class Factory{
